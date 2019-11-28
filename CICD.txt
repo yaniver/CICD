@@ -1,0 +1,46 @@
+Prerequsite: 
+===========
+  Linux VM with Internet connection (such as,  Ubuntu 19 create from Hyper-V UI in Windows)
+    Note: enable internet connection link: https://superuser.com/questions/469806/windows-8-hyper-v-how-to-give-vm-internet-access)
+  Make sure you have docker and docker-compose installed.
+
+
+Jenkins Server Installation
+========================
+1. In Ubuntu\Linux VM, open linux terminal 
+    run sudo apt update
+	docker login
+	sudo docker pull jenkins/jenkins:jdk11
+	cd ~/CICD (create this folder under pwd in case it isn't created)
+	mkdir myJenkinsData
+	sudo docker run --name myJenkins -d --rm -ti -p 8080:8080 -p 50000:50000 -v ~/CICD/myJenkinsData:/var/jenkins_home jenkins/jenkins:jdk11
+	sudo docker exec -it myJenkins /bin/bash -c "cat /var/jenkins_home/secrets/initialAdminPassword"
+    (note: in case you need to remove a container run command "sudo docker rm <container_id> -f")
+2. Open browser:
+	http://localhost:8080/
+	Copy-Paste value from previous command (.."cat /var/jenkins_home/secrets/initialAdminPassword")
+	Add user name and pw (username:yaniv ;  pw=eran2717) and change Jenkins URL to VM hostname
+
+
+
+Prometheus+Grafana+Alert_Manager Installation:
+=============================================
+Link (Full details): https://github.com/stefanprodan/dockprom
+cd ~/CICD
+git clone https://github.com/stefanprodan/dockprom
+cp ~/CICD/GrafanaDashboardExtra/*.json ~/CICD/dockprom/grafana/provisioning/dashboards
+cd dockprom
+$env:ADMIN_USER="admin"  (for linux VM just run ADMIN_USER=admin )
+$env:ADMIN_PASSWORD="admin"
+sudo docker-compose up -d
+(note: in case you need to delete all resources create by docker-compose including volume run the following command "sudo docker-compose down -v")
+
+JMeter deploy:
+==============
+cd ~/CICD/JMeter
+sudo docker build -t jmeter .
+mkdir JMeterData
+export timestamp=$(date +%Y%m%d_%H%M%S)
+export volume_path=~/CICD/JMeter
+export jmeter_path=/mnt/jmeter
+sudo docker run -p 8983:8983 --volume “${volume_path}”:${jmeter_path} jmeter -n -Jcsv_staticParams=${jmeter_path}/static_parameters.txt -Jmy_csv=${jmeter_path}/collectionsList.txt  -JThreads=1 -t ${jmeter_path}/SolrJ.jmx -l ${jmeter_path}/tmp/result_${timestamp}.jtl -j ${jmeter_path}/tmp/jmeter_${timestamp}.log
