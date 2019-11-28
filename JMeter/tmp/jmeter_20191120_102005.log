@@ -1,0 +1,64 @@
+2019-11-20 09:20:06,396 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2019-11-20 09:20:06,411 INFO o.a.j.JMeter: Loading user properties from: /opt/apache-jmeter-5.2/bin/user.properties
+2019-11-20 09:20:06,412 INFO o.a.j.JMeter: Loading system properties from: /opt/apache-jmeter-5.2/bin/system.properties
+2019-11-20 09:20:06,412 INFO o.a.j.JMeter: Setting JMeter property: csv_staticParams=/mnt/jmeter/static_parameters.txt
+2019-11-20 09:20:06,413 INFO o.a.j.JMeter: Setting JMeter property: my_csv=/mnt/jmeter/collectionsList.txt
+2019-11-20 09:20:06,413 INFO o.a.j.JMeter: Setting JMeter property: Threads=1
+2019-11-20 09:20:06,414 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2019-11-20 09:20:06,414 INFO o.a.j.JMeter: Version 5.2
+2019-11-20 09:20:06,414 INFO o.a.j.JMeter: java.version=1.8.0_212
+2019-11-20 09:20:06,414 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2019-11-20 09:20:06,414 INFO o.a.j.JMeter: os.name=Linux
+2019-11-20 09:20:06,415 INFO o.a.j.JMeter: os.arch=amd64
+2019-11-20 09:20:06,415 INFO o.a.j.JMeter: os.version=5.0.0-36-generic
+2019-11-20 09:20:06,415 INFO o.a.j.JMeter: file.encoding=UTF-8
+2019-11-20 09:20:06,415 INFO o.a.j.JMeter: java.awt.headless=true
+2019-11-20 09:20:06,415 INFO o.a.j.JMeter: Max memory     =1652555776
+2019-11-20 09:20:06,415 INFO o.a.j.JMeter: Available Processors =4
+2019-11-20 09:20:06,421 INFO o.a.j.JMeter: Default Locale=English (EN)
+2019-11-20 09:20:06,421 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2019-11-20 09:20:06,421 INFO o.a.j.JMeter: JMeterHome=/opt/apache-jmeter-5.2
+2019-11-20 09:20:06,421 INFO o.a.j.JMeter: user.dir  =/opt/apache-jmeter-5.2
+2019-11-20 09:20:06,421 INFO o.a.j.JMeter: PWD       =/opt/apache-jmeter-5.2
+2019-11-20 09:20:06,422 INFO o.a.j.JMeter: IP: 172.17.0.2 Name: 13dd8e0a8b82 FullName: 13dd8e0a8b82
+2019-11-20 09:20:06,425 INFO o.a.j.s.FileServer: Default base='/opt/apache-jmeter-5.2'
+2019-11-20 09:20:06,430 INFO o.a.j.s.FileServer: Set new base='/mnt/jmeter'
+2019-11-20 09:20:06,577 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-11-20 09:20:06,600 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-11-20 09:20:06,605 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-11-20 09:20:06,612 INFO o.a.j.s.SaveService: Loading file: /mnt/jmeter/SolrJ.jmx
+2019-11-20 09:20:06,669 INFO o.a.j.JMeter: Creating summariser <summary>
+2019-11-20 09:20:06,684 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-11-20 09:20:06,685 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-11-20 09:20:06,685 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-11-20 09:20:06,690 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2019-11-20 09:20:06,690 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2019-11-20 09:20:07,160 INFO o.a.j.JMeter: Running test (1574238007160)
+2019-11-20 09:20:07,205 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-11-20 09:20:07,206 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2019-11-20 09:20:07,206 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-11-20 09:20:07,206 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=400 delayedStart=true
+2019-11-20 09:20:07,206 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-11-20 09:20:07,207 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-11-20 09:20:07,220 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-11-20 09:20:07,224 INFO o.a.j.s.FileServer: Stored: /mnt/jmeter/static_parameters.txt
+2019-11-20 09:20:07,225 INFO o.a.j.s.FileServer: Stored: /mnt/jmeter/collectionsList.txt
+2019-11-20 09:20:07,227 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2019-11-20 09:20:07,227 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2019-11-20 09:20:07,227 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2019-11-20 09:20:07,227 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2019-11-20 09:20:30,001 INFO o.a.j.r.Summariser: summary +  19307 in 00:00:23 =  845.3/s Avg:     1 Min:     0 Max:   787 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2019-11-20 09:21:00,009 INFO o.a.j.r.Summariser: summary +  28495 in 00:00:30 =  949.6/s Avg:     0 Min:     0 Max:    41 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2019-11-20 09:21:00,009 INFO o.a.j.r.Summariser: summary =  47802 in 00:00:53 =  904.5/s Avg:     1 Min:     0 Max:   787 Err:     0 (0.00%)
+2019-11-20 09:21:30,002 INFO o.a.j.r.Summariser: summary +  29569 in 00:00:30 =  985.9/s Avg:     0 Min:     0 Max:    39 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2019-11-20 09:21:30,002 INFO o.a.j.r.Summariser: summary =  77371 in 00:01:23 =  934.0/s Avg:     0 Min:     0 Max:   787 Err:     0 (0.00%)
+2019-11-20 09:22:00,000 INFO o.a.j.r.Summariser: summary +  29215 in 00:00:30 =  973.9/s Avg:     0 Min:     0 Max:    23 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2019-11-20 09:22:00,000 INFO o.a.j.r.Summariser: summary = 106586 in 00:01:53 =  944.6/s Avg:     0 Min:     0 Max:   787 Err:     0 (0.00%)
+2019-11-20 09:22:30,000 INFO o.a.j.r.Summariser: summary +  29784 in 00:00:30 =  992.8/s Avg:     0 Min:     0 Max:    23 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2019-11-20 09:22:30,000 INFO o.a.j.r.Summariser: summary = 136370 in 00:02:23 =  954.7/s Avg:     0 Min:     0 Max:   787 Err:     0 (0.00%)
+2019-11-20 09:23:00,000 INFO o.a.j.r.Summariser: summary +  29989 in 00:00:30 =  999.6/s Avg:     0 Min:     0 Max:    36 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2019-11-20 09:23:00,000 INFO o.a.j.r.Summariser: summary = 166359 in 00:02:53 =  962.5/s Avg:     0 Min:     0 Max:   787 Err:     0 (0.00%)
+2019-11-20 09:23:30,000 INFO o.a.j.r.Summariser: summary +  29382 in 00:00:30 =  979.4/s Avg:     0 Min:     0 Max:    33 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2019-11-20 09:23:30,001 INFO o.a.j.r.Summariser: summary = 195741 in 00:03:23 =  965.0/s Avg:     0 Min:     0 Max:   787 Err:     0 (0.00%)
+2019-11-20 09:24:00,000 INFO o.a.j.r.Summariser: summary +  30109 in 00:00:30 = 1003.6/s Avg:     0 Min:     0 Max:    30 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2019-11-20 09:24:00,001 INFO o.a.j.r.Summariser: summary = 225850 in 00:03:53 =  970.0/s Avg:     0 Min:     0 Max:   787 Err:     0 (0.00%)

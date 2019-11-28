@@ -1,0 +1,52 @@
+2019-11-20 10:01:13,016 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2019-11-20 10:01:13,032 INFO o.a.j.JMeter: Loading user properties from: /opt/apache-jmeter-5.2/bin/user.properties
+2019-11-20 10:01:13,033 INFO o.a.j.JMeter: Loading system properties from: /opt/apache-jmeter-5.2/bin/system.properties
+2019-11-20 10:01:13,033 INFO o.a.j.JMeter: Setting JMeter property: csv_staticParams=/mnt/jmeter/static_parameters.txt
+2019-11-20 10:01:13,033 INFO o.a.j.JMeter: Setting JMeter property: my_csv=/mnt/jmeter/collectionsList.txt
+2019-11-20 10:01:13,033 INFO o.a.j.JMeter: Setting JMeter property: Threads=1
+2019-11-20 10:01:13,035 INFO o.a.j.JMeter: Copyright (c) 1998-2019 The Apache Software Foundation
+2019-11-20 10:01:13,036 INFO o.a.j.JMeter: Version 5.2
+2019-11-20 10:01:13,036 INFO o.a.j.JMeter: java.version=1.8.0_212
+2019-11-20 10:01:13,036 INFO o.a.j.JMeter: java.vm.name=OpenJDK 64-Bit Server VM
+2019-11-20 10:01:13,036 INFO o.a.j.JMeter: os.name=Linux
+2019-11-20 10:01:13,036 INFO o.a.j.JMeter: os.arch=amd64
+2019-11-20 10:01:13,036 INFO o.a.j.JMeter: os.version=5.0.0-36-generic
+2019-11-20 10:01:13,036 INFO o.a.j.JMeter: file.encoding=UTF-8
+2019-11-20 10:01:13,036 INFO o.a.j.JMeter: java.awt.headless=true
+2019-11-20 10:01:13,036 INFO o.a.j.JMeter: Max memory     =1579155456
+2019-11-20 10:01:13,036 INFO o.a.j.JMeter: Available Processors =4
+2019-11-20 10:01:13,041 INFO o.a.j.JMeter: Default Locale=English (EN)
+2019-11-20 10:01:13,041 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2019-11-20 10:01:13,041 INFO o.a.j.JMeter: JMeterHome=/opt/apache-jmeter-5.2
+2019-11-20 10:01:13,041 INFO o.a.j.JMeter: user.dir  =/opt/apache-jmeter-5.2
+2019-11-20 10:01:13,041 INFO o.a.j.JMeter: PWD       =/opt/apache-jmeter-5.2
+2019-11-20 10:01:13,041 INFO o.a.j.JMeter: IP: 172.17.0.2 Name: a24107ee4c08 FullName: a24107ee4c08
+2019-11-20 10:01:13,045 INFO o.a.j.s.FileServer: Default base='/opt/apache-jmeter-5.2'
+2019-11-20 10:01:13,049 INFO o.a.j.s.FileServer: Set new base='/mnt/jmeter'
+2019-11-20 10:01:13,189 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2019-11-20 10:01:13,212 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2019-11-20 10:01:13,217 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2019-11-20 10:01:13,224 INFO o.a.j.s.SaveService: Loading file: /mnt/jmeter/SolrJ.jmx
+2019-11-20 10:01:13,279 INFO o.a.j.JMeter: Creating summariser <summary>
+2019-11-20 10:01:13,292 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2019-11-20 10:01:13,293 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-11-20 10:01:13,293 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2019-11-20 10:01:13,299 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2019-11-20 10:01:13,299 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2019-11-20 10:01:13,771 INFO o.a.j.JMeter: Running test (1574240473771)
+2019-11-20 10:01:13,815 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group
+2019-11-20 10:01:13,816 INFO o.a.j.e.StandardJMeterEngine: Starting 1 threads for group Thread Group.
+2019-11-20 10:01:13,816 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2019-11-20 10:01:13,816 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=1 ramp-up=400 delayedStart=true
+2019-11-20 10:01:13,817 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2019-11-20 10:01:13,817 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2019-11-20 10:01:13,828 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1-1
+2019-11-20 10:01:13,833 INFO o.a.j.s.FileServer: Stored: /mnt/jmeter/static_parameters.txt
+2019-11-20 10:01:13,834 INFO o.a.j.s.FileServer: Stored: /mnt/jmeter/collectionsList.txt
+2019-11-20 10:01:13,837 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2019-11-20 10:01:13,837 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to ISO-8859-1
+2019-11-20 10:01:13,838 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2019-11-20 10:01:13,838 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2019-11-20 10:01:30,001 INFO o.a.j.r.Summariser: summary +  11484 in 00:00:16 =  707.6/s Avg:     1 Min:     0 Max:   916 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2019-11-20 10:02:00,000 INFO o.a.j.r.Summariser: summary +  28213 in 00:00:30 =  940.4/s Avg:     0 Min:     0 Max:    40 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2019-11-20 10:02:00,000 INFO o.a.j.r.Summariser: summary =  39697 in 00:00:46 =  858.7/s Avg:     1 Min:     0 Max:   916 Err:     0 (0.00%)
