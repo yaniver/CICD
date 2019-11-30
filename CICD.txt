@@ -5,6 +5,14 @@ Prerequsite:
   Make sure you have docker and docker-compose installed.
 
 
+GIT:
+====
+  Push local changes to github -
+	git add <folder name or file name>
+	git commit -m "Adding solrexporter dockerfile and script file"
+	for checking if other files were change\added\deleted run command - git status
+	git push origin master
+
 Jenkins Server Installation
 ========================
 1. In Ubuntu\Linux VM, open linux terminal 
