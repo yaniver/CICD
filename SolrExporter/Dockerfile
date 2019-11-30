@@ -9,7 +9,7 @@ ARG SOLR_DOWNLOAD_SERVER
 
 RUN set -e; \
   apt-get update; \
-  apt-get -y install acl dirmngr gpg lsof procps wget netcat nano; \
+  apt-get -y install acl dirmngr gpg lsof procps wget netcat nano sudo; \
   rm -rf /var/lib/apt/lists/*
 
 ENV SOLR_USER="solr" \
@@ -106,11 +106,9 @@ RUN set -e; \
   { command -v gpgconf; gpgconf --kill all || :; }; \
   rm -r "$GNUPGHOME"
 
-COPY --chown=0:0 scripts /opt/docker-solr/scripts
-
-VOLUME /var/solr
-EXPOSE 8983
+EXPOSE 8095
 WORKDIR /opt/solr/contrib/prometheus-exporter
-USER $SOLR_USER
 
-ENTRYPOINT ["./bin/solr-exporter", "-p 8095", "-z 10.16.250.247", "-f ./conf/solr-exporter-config.xml"]
+COPY solrexporter-entrypoint.sh ./bin/solrexporter-entrypoint.sh
+RUN /bin/bash -c 'chmod +x ./bin/solrexporter-entrypoint.sh'
+ENTRYPOINT ["./bin/solrexporter-entrypoint.sh"]

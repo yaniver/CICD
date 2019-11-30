@@ -35,6 +35,11 @@ $env:ADMIN_PASSWORD="admin"
 sudo docker-compose up -d
 (note: in case you need to delete all resources create by docker-compose including volume run the following command "sudo docker-compose down -v")
 
+Prometheus exporter:
+===================
+sudo docker run --name solrexporter -d --restart always -p 8095:8095 solrexporter
+
+
 JMeter deploy:
 ==============
 cd ~/CICD/JMeter
