@@ -8,6 +8,7 @@ Prerequsite:
 GIT:
 ====
   Push local changes to github -
+	git init (only for first time)
 	git add <folder name or file name>
 	git commit -m "Adding solrexporter dockerfile and script file"
 	for checking if other files were change\added\deleted run command - git status
@@ -45,6 +46,8 @@ sudo docker-compose up -d
 
 Prometheus exporter:
 ===================
+CD SolrExporter
+sudo docker build -t solrexporter
 sudo docker run --name solrexporter -d --restart always -p 8095:8095 solrexporter
 
 
@@ -53,7 +56,4 @@ JMeter deploy:
 cd ~/CICD/JMeter
 sudo docker build -t jmeter .
 mkdir JMeterData
-export timestamp=$(date +%Y%m%d_%H%M%S)
-export volume_path=~/CICD/JMeter
-export jmeter_path=/mnt/jmeter
-sudo docker run -p 8983:8983 --volume “${volume_path}”:${jmeter_path} jmeter -n -Jcsv_staticParams=${jmeter_path}/static_parameters.txt -Jmy_csv=${jmeter_path}/collectionsList.txt  -JThreads=1 -t ${jmeter_path}/SolrJ.jmx -l ${jmeter_path}/tmp/result_${timestamp}.jtl -j ${jmeter_path}/tmp/jmeter_${timestamp}.log
+source ./launchJMeterDockerRun.sh
