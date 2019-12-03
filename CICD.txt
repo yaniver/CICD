@@ -22,7 +22,7 @@ Jenkins Server Installation
 	sudo docker pull jenkins/jenkins:jdk11
 	cd ~/CICD (create this folder under pwd in case it isn't created)
 	mkdir myJenkinsData
-	sudo docker run --name myJenkins -d --rm -ti -p 8080:8080 -p 50000:50000 -v ~/CICD/myJenkinsData:/var/jenkins_home jenkins/jenkins:jdk11
+	sudo docker run --name myJenkins -d -ti -p 8080:8080 -p 50000:50000 -v ~/CICD/myJenkinsData:/var/jenkins_home jenkins/jenkins:jdk11
 	sudo docker exec -it myJenkins /bin/bash -c "cat /var/jenkins_home/secrets/initialAdminPassword"
     (note: in case you need to remove a container run command "sudo docker rm <container_id> -f")
 2. Open browser:
@@ -36,17 +36,18 @@ Prometheus+Grafana+Alert_Manager Installation:
 =============================================
 Link (Full details): https://github.com/stefanprodan/dockprom
 cd ~/CICD
-git clone https://github.com/stefanprodan/dockprom
-cp ~/CICD/GrafanaDashboardExtra/*.json ~/CICD/dockprom/grafana/provisioning/dashboards
+sudo git clone https://github.com/stefanprodan/dockprom
+sudo cp ~/CICD/dockerpromModification/GrafanaDashboardExtra/*.json ~/CICD/dockprom/grafana/provisioning/dashboards
+sudo cp ~/CICD/dockerpromModification/Prometheus/*.yml ~/CICD/dockprom/prometheus
 cd dockprom
-$env:ADMIN_USER="admin"  (for linux VM just run ADMIN_USER=admin )
-$env:ADMIN_PASSWORD="admin"
+ADMIN_USER=admin
+ADMIN_PASSWORD=admin
 sudo docker-compose up -d
 (note: in case you need to delete all resources create by docker-compose including volume run the following command "sudo docker-compose down -v")
 
 Prometheus exporter:
 ===================
-CD SolrExporter
+CD ~/CICD/SolrExporter
 sudo docker build -t solrexporter .
 sudo docker run --name solrexporter -d --restart always -p 8095:8095 solrexporter
 
@@ -55,5 +56,4 @@ JMeter deploy:
 ==============
 cd ~/CICD/JMeter
 sudo docker build -t jmeter .
-mkdir JMeterData
 source ./launchJMeterDockerRun.sh

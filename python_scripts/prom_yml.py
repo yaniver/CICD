@@ -7,8 +7,8 @@ with open(r'/home/yaniver/CICD/dockprom/prometheus/prometheus.yml') as file:
         print(item, ":", doc)
 
 
-
-dict_file = [{'scrape_configs' : ['job_name', 'zk', 'scrape_interval', '10s', 'static_configs', [{'targets': ['localhost:8095']}]]}]
+dict_file = [{'scrape_configs': ['job_name', 'zk', 'scrape_interval',
+                                 '10s', 'static_configs', [{'targets': ['localhost:8095']}]]}]
 
 with open(r'/home/yaniver/CICD/dockprom/prometheus/prometheus.yml', 'w') as file:
     documents = yaml.dump(dict_file, file)
