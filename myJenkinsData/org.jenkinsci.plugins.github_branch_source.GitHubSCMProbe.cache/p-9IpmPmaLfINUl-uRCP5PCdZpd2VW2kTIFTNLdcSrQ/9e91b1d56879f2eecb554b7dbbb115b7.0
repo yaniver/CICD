@@ -5,22 +5,21 @@ Authorization: Basic eWFuaXZlcjowMjExNTMxYzZhMzU0MWNlMGE2YzFlYzk1NTI3MWVhODI4YTd
 Accept-Encoding: gzip
 HTTP/1.1 200 OK
 28
+Date: Wed, 04 Dec 2019 19:58:06 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
+Server: GitHub.com
+Status: 200 OK
+X-RateLimit-Limit: 5000
+X-RateLimit-Remaining: 4995
+X-RateLimit-Reset: 1575493085
+Cache-Control: private, max-age=60, s-maxage=60
+Vary: Accept, Authorization, Cookie, X-GitHub-OTP
+ETag: W/"31678c51e69a1ffc99e97106f9a852bf"
+Last-Modified: Tue, 03 Dec 2019 19:51:39 GMT
 X-OAuth-Scopes: read:user, repo, user:email, write:repo_hook
 X-Accepted-OAuth-Scopes: 
 X-GitHub-Media-Type: github.v3; format=json
-Content-Encoding: gzip
-Date: Tue, 03 Dec 2019 21:09:38 GMT
-Server: GitHub.com
-Status: 304 Not Modified
-X-RateLimit-Limit: 5000
-X-RateLimit-Remaining: 4996
-X-RateLimit-Reset: 1575410974
-Cache-Control: private, max-age=60, s-maxage=60
-Vary: Accept, Authorization, Cookie, X-GitHub-OTP
-ETag: "0844da0f2ee476afd9007ae1c427bd2e"
-Last-Modified: Tue, 03 Dec 2019 19:51:39 GMT
 Access-Control-Expose-Headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type
 Access-Control-Allow-Origin: *
 Strict-Transport-Security: max-age=31536000; includeSubdomains; preload
@@ -29,10 +28,11 @@ X-Content-Type-Options: nosniff
 X-XSS-Protection: 1; mode=block
 Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
 Content-Security-Policy: default-src 'none'
+Content-Encoding: gzip
 Vary: Accept-Encoding
-X-GitHub-Request-Id: E06B:948E:3BF5CE0:47C8ED9:5DE6CF11
-OkHttp-Sent-Millis: 1575407378010
-OkHttp-Received-Millis: 1575407378254
+X-GitHub-Request-Id: E6BE:11CCA:839C105:9D5AD60:5DE80FCD
+OkHttp-Sent-Millis: 1575489486183
+OkHttp-Received-Millis: 1575489486411
 
 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 2

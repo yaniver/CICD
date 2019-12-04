@@ -5,17 +5,17 @@ Authorization: Basic eWFuaXZlcjowMjExNTMxYzZhMzU0MWNlMGE2YzFlYzk1NTI3MWVhODI4YTd
 Accept-Encoding: gzip
 HTTP/1.1 200 OK
 28
-Date: Tue, 03 Dec 2019 21:09:41 GMT
+Date: Wed, 04 Dec 2019 19:58:07 GMT
 Content-Type: application/json; charset=utf-8
 Transfer-Encoding: chunked
 Server: GitHub.com
 Status: 200 OK
 X-RateLimit-Limit: 5000
-X-RateLimit-Remaining: 4990
-X-RateLimit-Reset: 1575410974
+X-RateLimit-Remaining: 4993
+X-RateLimit-Reset: 1575493085
 Cache-Control: private, max-age=60, s-maxage=60
 Vary: Accept, Authorization, Cookie, X-GitHub-OTP
-ETag: W/"0844da0f2ee476afd9007ae1c427bd2e"
+ETag: W/"31678c51e69a1ffc99e97106f9a852bf"
 Last-Modified: Tue, 03 Dec 2019 19:51:39 GMT
 X-OAuth-Scopes: read:user, repo, user:email, write:repo_hook
 X-Accepted-OAuth-Scopes: 
@@ -30,9 +30,9 @@ Referrer-Policy: origin-when-cross-origin, strict-origin-when-cross-origin
 Content-Security-Policy: default-src 'none'
 Content-Encoding: gzip
 Vary: Accept-Encoding
-X-GitHub-Request-Id: E06B:948E:3BF5DEC:47C9017:5DE6CF15
-OkHttp-Sent-Millis: 1575407381270
-OkHttp-Received-Millis: 1575407381520
+X-GitHub-Request-Id: E6BE:11CCA:839C1F7:9D5AEB4:5DE80FCF
+OkHttp-Sent-Millis: 1575489487272
+OkHttp-Received-Millis: 1575489487513
 
 TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
 2

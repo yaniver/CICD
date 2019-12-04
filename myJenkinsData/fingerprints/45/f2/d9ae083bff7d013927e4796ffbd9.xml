@@ -6,7 +6,7 @@
   <usages>
     <entry>
       <string>CICD/master</string>
-      <ranges>1</ranges>
+      <ranges>1-7</ranges>
     </entry>
   </usages>
   <facets/>
