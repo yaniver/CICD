@@ -29,6 +29,9 @@ Jenkins Server Installation
 	Copy-Paste value from previous command (.."cat /var/jenkins_home/secrets/initialAdminPassword")
 	Add user name and pw (username:yaniv ;  pw=err) and change Jenkins URL to VM hostname
 	Inside Jenkins UI install blue ocean plugin
+3.      Run command --> sudo cp -avr home/yaniver/CICD /var/lib/jenkins
+4.      sudo visudo
+	Add the follwing line "jenkins ALL=(ALL) NOPASSWD: ALL"
 
 
 
