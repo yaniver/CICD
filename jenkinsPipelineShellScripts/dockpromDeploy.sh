@@ -1,9 +1,10 @@
 #!/bin/bash
 
-cd /var/lib/jenkins/CICD
+JENKINS_HOME="/var/lib/jenkins"
+cd ${JENKINS_HOME}/CICD
 git clone https://github.com/stefanprodan/dockprom
-sudo cp ~/CICD/dockerpromModification/GrafanaDashboardExtra/*.json ~/CICD/dockprom/grafana/provisioning/dashboards
-sudo cp ~/CICD/dockerpromModification/Prometheus/*.yml ~/CICD/dockprom/prometheus
+sudo cp ${JENKINS_HOME}/CICD/dockerpromModification/GrafanaDashboardExtra/*.json ${JENKINS_HOME}/CICD/dockprom/grafana/provisioning/dashboards
+sudo cp ${JENKINS_HOME}/CICD/dockerpromModification/Prometheus/*.yml ${JENKINS_HOME}/CICD/dockprom/prometheus
 cd dockprom
 ADMIN_USER=admin
 ADMIN_PASSWORD=admin
