@@ -17,6 +17,7 @@ Open browser (http://localhost:8080/) and Copy-Paste value from  command "sudo c
 Add user name and pw (username:yaniv ;  pw=err) and change Jenkins URL to VM hostname
 Select "Installed suggested Plugins"
 Inside Jenkins Plugin Manager-->Available, install blue ocean plugin
+Enter Blue ocean UI, upload existing pipeline (from Jenkins file located in GitHub) by creating new pipeline (note: github token required for login)
 
 
 
