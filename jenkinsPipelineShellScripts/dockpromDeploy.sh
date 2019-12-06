@@ -2,7 +2,7 @@
 
 JENKINS_HOME="/var/lib/jenkins"
 cd ${JENKINS_HOME}/CICD
-git clone https://github.com/stefanprodan/dockprom
+sudo git clone https://github.com/stefanprodan/dockprom
 sudo cp ${JENKINS_HOME}/CICD/dockerpromModification/GrafanaDashboardExtra/*.json ${JENKINS_HOME}/CICD/dockprom/grafana/provisioning/dashboards
 sudo cp ${JENKINS_HOME}/CICD/dockerpromModification/Prometheus/*.yml ${JENKINS_HOME}/CICD/dockprom/prometheus
 cd dockprom
