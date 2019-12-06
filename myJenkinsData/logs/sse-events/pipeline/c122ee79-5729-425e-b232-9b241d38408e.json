@@ -1,1 +1,0 @@
-{"jenkins_event_timestamp":"1575489504764","jenkins_event":"pipeline_block_start","jenkins_event_uuid":"c122ee79-5729-425e-b232-9b241d38408e","jenkins_channel":"pipeline","pipeline_step_name":"node","pipeline_step_flownode_id":"4","pipeline_job_name":"CICD/master","pipeline_context":"2/3/4","pipeline_run_id":"7","jenkins_instance_url":"http://10.16.250.9:8080/"}

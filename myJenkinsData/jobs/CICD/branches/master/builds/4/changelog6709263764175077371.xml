@@ -1,9 +1,0 @@
-commit 7e15ae5c7eb3534a5607e1a98c5f8213fa8679c7
-tree 55c890ebe85b2123555818a9284e0cb502395b38
-parent 961cce0e51eb3a5dceab6ab5eea6e8e67de7b1fb
-author yaniver <yaniver@gmail.com> 2019-12-04 10:58:32 -0800
-committer yaniver <yaniver@gmail.com> 2019-12-04 10:58:32 -0800
-
-    Update jenkinsPipelineShellScripts folder inside jenkins home folder and accordingly update pipeline step to the correct path
-
-:100644 100644 739da5de1a6e5bec23b16f5f01abc32c52ee5222 ce8960c62fda2fa91c04e9da71f822c8b544e9af M	Jenkinsfile

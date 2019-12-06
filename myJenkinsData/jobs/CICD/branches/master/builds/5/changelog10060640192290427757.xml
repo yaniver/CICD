@@ -1,9 +1,0 @@
-commit b62335ea780cfd2c56b6364680181e1e46c5e46e
-tree 2836d40b77189e6d4e87251a94eea4a68e9cf90d
-parent 7e15ae5c7eb3534a5607e1a98c5f8213fa8679c7
-author yaniver <yaniver@gmail.com> 2019-12-04 11:19:27 -0800
-committer yaniver <yaniver@gmail.com> 2019-12-04 11:19:27 -0800
-
-    fix path again
-
-:100644 100644 ce8960c62fda2fa91c04e9da71f822c8b544e9af 4be797ab8bfe6f629eb49937e21511b2e029f680 M	Jenkinsfile

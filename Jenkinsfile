@@ -3,19 +3,19 @@ pipeline {
   stages {
     stage('Prometheus') {
       steps {
-        sh '~/JENKINS_CICD/jenkinsPipelineShellScripts/dockpromDeploy.sh'
+        sh '~/CICD/jenkinsPipelineShellScripts/dockpromDeploy.sh'
       }
     }
 
     stage('Solr Exporter') {
       steps {
-        sh '~/JENKINS_CICD/jenkinsPipelineShellScripts/solrExporterDeploy.sh'
+        sh '~/CICD/jenkinsPipelineShellScripts/solrExporterDeploy.sh'
       }
     }
 
     stage('JMeter run') {
       steps {
-        sh '~/JENKINS_CICD/jenkinsPipelineShellScripts/jmeterScriptExec.sh'
+        sh '~/CICD/jenkinsPipelineShellScripts/jmeterScriptExec.sh'
       }
     }
 

@@ -1,0 +1,59 @@
+Prerequsite: 
+===========
+  Linux VM with Internet connection (such as,  Ubuntu 19 create from Hyper-V UI in Windows)
+    Note: enable internet connection link: https://superuser.com/questions/469806/windows-8-hyper-v-how-to-give-vm-internet-access)
+  Make sure you have docker and docker-compose installed.
+
+
+GIT:
+====
+  Push local changes to github -
+	git init (only for first time)
+	git add <folder name or file name>
+	git commit -m "Adding solrexporter dockerfile and script file"
+	for checking if other files were change\added\deleted run command - git status
+	git push origin master
+
+Jenkins Server Installation
+========================
+1. In Ubuntu\Linux VM, open linux terminal 
+	sudo apt update
+	sudo apt install openjdk-8-jdk
+	wget -q -O - https://pkg.jenkins.io/debian/jenkins.io.key | sudo apt-key add -
+	sudo sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+	sudo apt update
+	sudo apt install jenkins
+	systemctl status jenkins
+2. Open browser:
+	http://localhost:8080/
+	Copy-Paste value from previous command (.."cat /var/jenkins_home/secrets/initialAdminPassword")
+	Add user name and pw (username:yaniv ;  pw=err) and change Jenkins URL to VM hostname
+	Inside Jenkins UI install blue ocean plugin
+
+
+
+Prometheus+Grafana+Alert_Manager Installation:
+=============================================
+Link (Full details): https://github.com/stefanprodan/dockprom
+cd ~/CICD
+sudo git clone https://github.com/stefanprodan/dockprom
+sudo cp ~/CICD/dockerpromModification/GrafanaDashboardExtra/*.json ~/CICD/dockprom/grafana/provisioning/dashboards
+sudo cp ~/CICD/dockerpromModification/Prometheus/*.yml ~/CICD/dockprom/prometheus
+cd dockprom
+ADMIN_USER=admin
+ADMIN_PASSWORD=admin
+sudo docker-compose up -d
+(note: in case you need to delete all resources create by docker-compose including volume run the following command "sudo docker-compose down -v")
+
+Prometheus exporter:
+===================
+CD ~/CICD/SolrExporter
+sudo docker build -t solrexporter .
+sudo docker run --name solrexporter -d --restart always -p 8095:8095 solrexporter
+
+
+JMeter deploy:
+==============
+cd ~/CICD/JMeter
+sudo docker build -t jmeter .
+source ./launchJMeterDockerRun.sh
