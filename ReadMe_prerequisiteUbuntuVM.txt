@@ -20,22 +20,27 @@ Inside Jenkins Plugin Manager-->Available, install blue ocean plugin
 Enter Blue ocean UI, upload existing pipeline (from Jenkins file located in GitHub) by creating new pipeline (note: github token required for login)
 
 
+Environment config:
+- In solrexporter folder, Update Solr or ZK IP in solrexporter-entrypoint.sh (in case you have already old image then you need to delete and recreate it).
+- In JMeter folder, update Solr ip and collections name in collectionsList.txt.
 
 
-Prometheus+Grafana+Alert_Manager Installation:
-=============================================
-Link (Full details): https://github.com/stefanprodan/dockprom
-Check script in ../CICD/jenkinsPipelineShellScripts/dockpromDeploy.sh
-(note: in case you need to delete all resources create by docker-compose including volume run the following command "sudo docker-compose down -v")
 
-Prometheus exporter:
-===================
-Check script in ../CICD/jenkinsPipelineShellScripts/solrExporterDeploy.sh
+Following deployments are done by running Jenkins pipeline form Blue Ocena UI:
+=============================================================================
+	Prometheus+Grafana+Alert_Manager Installation:
+	=============================================
+	Link (Full details): https://github.com/stefanprodan/dockprom
+	Check script in ../CICD/jenkinsPipelineShellScripts/dockpromDeploy.sh
+	(note: in case you need to delete all resources create by docker-compose including volume run the following command "sudo docker-compose down -v")
 
+	Prometheus exporter:
+	===================
+	Check script in ../CICD/jenkinsPipelineShellScripts/solrExporterDeploy.sh
 
-JMeter deploy:
-==============
-Check script in ../CICD/jenkinsPipelineShellScripts/jmeterScriptExec.sh
+	JMeter deploy:
+	==============
+	Check script in ../CICD/jenkinsPipelineShellScripts/jmeterScriptExec.sh
 
 GIT:
 ====
