@@ -46,7 +46,7 @@ GIT:
 ====
   Push local changes to github -
 	git init (only for first time)
-	git add <folder name or file name>
+	git add -u
 	git commit -m "<relevant comment>"
 	for checking if other files were change\added\deleted run command - git status
 	git push origin master
