@@ -50,3 +50,17 @@ GIT:
 	git commit -m "<relevant comment>"
 	for checking if other files were change\added\deleted run command - git status
 	git push origin master
+
+
+Grafana SMTP support:
+====================
+- In docker-compose yml file, in Grafana env add
+      - GF_SMTP_ENABLED=true
+      - GF_SMTP_HOST=labmail.varonis.com:25
+      - GF_SMTP_USER=graphana_user@qa.varonis.com
+      - GF_SMTP_PASSWORD=H9JUvRXh0e
+      - GF_SMTP_SKIP_VERIFY=true
+      - GF_SMTP_FROM_ADDRESS=graphana_user@qa.varonis.com
+      - GF_SMTP_FROM_NAME=Grafana
+- In Grafana UI add alert rule in relevant graph.
+- In Grafana UI add notification channel.
