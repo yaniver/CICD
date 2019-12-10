@@ -1,4 +1,4 @@
-{ 
+{
   "annotations": {
     "list": [
       {
@@ -17,7 +17,7 @@
   "gnetId": null,
   "graphTooltip": 0,
   "id": null,
-  "iteration": 1573737390322,
+  "iteration": 1575968281877,
   "links": [],
   "panels": [
     {
@@ -343,6 +343,7 @@
     },
     {
       "collapsed": false,
+      "datasource": null,
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -364,10 +365,11 @@
       "fillGradient": 0,
       "gridPos": {
         "h": 5,
-        "w": 6,
+        "w": 7,
         "x": 0,
         "y": 4
       },
+      "hiddenSeries": false,
       "id": 206,
       "legend": {
         "alignAsTable": true,
@@ -468,10 +470,11 @@
       "fillGradient": 0,
       "gridPos": {
         "h": 5,
-        "w": 12,
-        "x": 6,
+        "w": 10,
+        "x": 7,
         "y": 4
       },
+      "hiddenSeries": false,
       "id": 142,
       "legend": {
         "alignAsTable": true,
@@ -479,7 +482,7 @@
         "current": true,
         "max": false,
         "min": false,
-        "rightSide": true,
+        "rightSide": false,
         "show": true,
         "sort": "avg",
         "sortDesc": true,
@@ -563,10 +566,11 @@
       "fillGradient": 0,
       "gridPos": {
         "h": 5,
-        "w": 6,
-        "x": 18,
+        "w": 7,
+        "x": 17,
         "y": 4
       },
+      "hiddenSeries": false,
       "id": 152,
       "legend": {
         "alignAsTable": true,
@@ -680,6 +684,7 @@
         "x": 0,
         "y": 9
       },
+      "hiddenSeries": false,
       "id": 171,
       "legend": {
         "alignAsTable": true,
@@ -796,6 +801,7 @@
         "x": 0,
         "y": 14
       },
+      "hiddenSeries": false,
       "id": 201,
       "legend": {
         "alignAsTable": true,
@@ -904,6 +910,7 @@
         "x": 0,
         "y": 19
       },
+      "hiddenSeries": false,
       "id": 203,
       "legend": {
         "alignAsTable": true,
@@ -1032,6 +1039,7 @@
         "x": 8,
         "y": 19
       },
+      "hiddenSeries": false,
       "id": 208,
       "legend": {
         "alignAsTable": true,
@@ -1128,6 +1136,7 @@
         "x": 16,
         "y": 19
       },
+      "hiddenSeries": false,
       "id": 210,
       "legend": {
         "alignAsTable": true,
@@ -1224,6 +1233,7 @@
         "x": 0,
         "y": 24
       },
+      "hiddenSeries": false,
       "id": 197,
       "legend": {
         "alignAsTable": true,
@@ -1330,6 +1340,7 @@
         "x": 12,
         "y": 24
       },
+      "hiddenSeries": false,
       "id": 199,
       "legend": {
         "alignAsTable": true,
@@ -1419,12 +1430,14 @@
       "dashes": false,
       "datasource": "Prometheus",
       "fill": 1,
+      "fillGradient": 0,
       "gridPos": {
         "h": 7,
         "w": 8,
         "x": 0,
         "y": 29
       },
+      "hiddenSeries": false,
       "id": 185,
       "legend": {
         "alignAsTable": true,
@@ -1443,7 +1456,9 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
-      "options": {},
+      "options": {
+        "dataLinks": []
+      },
       "percentage": false,
       "pointradius": 5,
       "points": false,
@@ -1526,12 +1541,14 @@
       "dashes": false,
       "datasource": "Prometheus",
       "fill": 1,
+      "fillGradient": 0,
       "gridPos": {
         "h": 7,
         "w": 8,
         "x": 8,
         "y": 29
       },
+      "hiddenSeries": false,
       "id": 177,
       "legend": {
         "alignAsTable": true,
@@ -1550,7 +1567,9 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
-      "options": {},
+      "options": {
+        "dataLinks": []
+      },
       "percentage": false,
       "pointradius": 5,
       "points": false,
@@ -1632,12 +1651,14 @@
       "dashes": false,
       "datasource": "Prometheus",
       "fill": 1,
+      "fillGradient": 0,
       "gridPos": {
         "h": 7,
         "w": 8,
         "x": 16,
         "y": 29
       },
+      "hiddenSeries": false,
       "id": 175,
       "legend": {
         "alignAsTable": true,
@@ -1656,7 +1677,9 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
-      "options": {},
+      "options": {
+        "dataLinks": []
+      },
       "percentage": false,
       "pointradius": 5,
       "points": false,
@@ -1722,12 +1745,14 @@
       "dashes": false,
       "datasource": "Prometheus",
       "fill": 1,
+      "fillGradient": 0,
       "gridPos": {
         "h": 8,
         "w": 24,
         "x": 0,
         "y": 36
       },
+      "hiddenSeries": false,
       "id": 181,
       "legend": {
         "alignAsTable": true,
@@ -1747,7 +1772,9 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
-      "options": {},
+      "options": {
+        "dataLinks": []
+      },
       "percentage": false,
       "pointradius": 5,
       "points": false,
@@ -1815,12 +1842,14 @@
       "datasource": "Prometheus",
       "description": "",
       "fill": 1,
+      "fillGradient": 0,
       "gridPos": {
         "h": 6,
         "w": 8,
         "x": 0,
         "y": 44
       },
+      "hiddenSeries": false,
       "id": 173,
       "legend": {
         "alignAsTable": true,
@@ -1839,7 +1868,9 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
-      "options": {},
+      "options": {
+        "dataLinks": []
+      },
       "percentage": false,
       "pointradius": 5,
       "points": false,
@@ -1915,12 +1946,14 @@
       "dashes": false,
       "datasource": "Prometheus",
       "fill": 1,
+      "fillGradient": 0,
       "gridPos": {
         "h": 6,
         "w": 8,
         "x": 8,
         "y": 44
       },
+      "hiddenSeries": false,
       "id": 183,
       "legend": {
         "alignAsTable": true,
@@ -1939,7 +1972,9 @@
       "linewidth": 1,
       "links": [],
       "nullPointMode": "null",
-      "options": {},
+      "options": {
+        "dataLinks": []
+      },
       "percentage": false,
       "pointradius": 5,
       "points": false,
@@ -2005,12 +2040,14 @@
       "dashes": false,
       "datasource": "Prometheus",
       "fill": 0,
+      "fillGradient": 0,
       "gridPos": {
         "h": 6,
         "w": 8,
         "x": 16,
         "y": 44
       },
+      "hiddenSeries": false,
       "id": 205,
       "legend": {
         "alignAsTable": true,
@@ -2030,7 +2067,9 @@
       "linewidth": 3,
       "links": [],
       "nullPointMode": "null as zero",
-      "options": {},
+      "options": {
+        "dataLinks": []
+      },
       "percentage": false,
       "pointradius": 3,
       "points": false,
@@ -2389,6 +2428,7 @@
     },
     {
       "collapsed": true,
+      "datasource": null,
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -3018,6 +3058,7 @@
     },
     {
       "collapsed": true,
+      "datasource": null,
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -3327,6 +3368,7 @@
     },
     {
       "collapsed": true,
+      "datasource": null,
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -3601,6 +3643,7 @@
     },
     {
       "collapsed": true,
+      "datasource": null,
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -4716,6 +4759,7 @@
     },
     {
       "collapsed": true,
+      "datasource": null,
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -6515,6 +6559,7 @@
     },
     {
       "collapsed": true,
+      "datasource": null,
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -7294,6 +7339,7 @@
     },
     {
       "collapsed": true,
+      "datasource": null,
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -8367,6 +8413,7 @@
     },
     {
       "collapsed": true,
+      "datasource": null,
       "gridPos": {
         "h": 1,
         "w": 24,
@@ -9435,8 +9482,8 @@
       "type": "row"
     }
   ],
-  "refresh": "1m",
-  "schemaVersion": 19,
+  "refresh": "30s",
+  "schemaVersion": 21,
   "style": "dark",
   "tags": [],
   "templating": {
@@ -9444,6 +9491,7 @@
       {
         "allValue": ".*",
         "current": {
+          "selected": false,
           "text": "All",
           "value": "$__all"
         },
@@ -9469,6 +9517,7 @@
       {
         "allValue": ".*",
         "current": {
+          "selected": false,
           "text": "All",
           "value": "$__all"
         },
@@ -9494,6 +9543,7 @@
       {
         "allValue": ".*",
         "current": {
+          "selected": false,
           "text": "All",
           "value": "$__all"
         },
@@ -9519,6 +9569,7 @@
       {
         "allValue": ".*",
         "current": {
+          "selected": false,
           "text": "All",
           "value": "$__all"
         },
@@ -9544,6 +9595,7 @@
       {
         "allValue": ".*",
         "current": {
+          "selected": false,
           "text": "All",
           "value": "$__all"
         },
@@ -9569,6 +9621,7 @@
       {
         "allValue": ".*",
         "current": {
+          "selected": false,
           "text": "All",
           "value": "$__all"
         },
@@ -9626,5 +9679,5 @@
   "timezone": "utc",
   "title": "Solr",
   "uid": "D7SNbJImk",
-  "version": 2
+  "version": 3
 }
