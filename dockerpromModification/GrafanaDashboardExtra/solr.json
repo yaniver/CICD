@@ -17,7 +17,7 @@
   "gnetId": null,
   "graphTooltip": 0,
   "id": null,
-  "iteration": 1575968281877,
+  "iteration": 1575979565202,
   "links": [],
   "panels": [
     {
@@ -605,7 +605,7 @@
       "steppedLine": false,
       "targets": [
         {
-          "expr": "sum(irate(solr_metrics_core_searcher_documents[5m]))",
+          "expr": "sum(rate(solr_metrics_core_searcher_documents[5m]))",
           "format": "time_series",
           "hide": false,
           "instant": false,
@@ -9482,7 +9482,7 @@
       "type": "row"
     }
   ],
-  "refresh": "30s",
+  "refresh": "1m",
   "schemaVersion": 21,
   "style": "dark",
   "tags": [],
@@ -9679,5 +9679,5 @@
   "timezone": "utc",
   "title": "Solr",
   "uid": "D7SNbJImk",
-  "version": 3
+  "version": 7
 }
