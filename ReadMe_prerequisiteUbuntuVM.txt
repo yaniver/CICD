@@ -52,9 +52,12 @@ GIT:
 	git push origin master
 
 
-Grafana SMTP support:
+Grafana Email support: 
 ====================
-- In docker-compose yml file, in Grafana env add
+  Option 1 (no internet - "email")-
+  Note 1: this option will work only inside LAB VM
+  Note 2: GF_... setting not required since i already define it in dockprom.zip in docker-compose.yml
+  - In docker-compose yml file, in Grafana env add
       - GF_SMTP_ENABLED=true
       - GF_SMTP_HOST=labmail.varonis.com:25
       - GF_SMTP_USER=graphana_user@qa.varonis.com
@@ -62,5 +65,11 @@ Grafana SMTP support:
       - GF_SMTP_SKIP_VERIFY=true
       - GF_SMTP_FROM_ADDRESS=graphana_user@qa.varonis.com
       - GF_SMTP_FROM_NAME=Grafana
-- In Grafana UI add alert rule in relevant graph.
-- In Grafana UI add notification channel.
+  - In Grafana UI add alert rule in relevant graph.
+  - In Grafana UI add email notification channel (you define a user that already exist in above SMTP server).
+
+  Option 2 (Internet exist - "Microsoft Teams")-
+  - In Grafana UI add Microsoft Teams notification channel and configure it with "Teams Incoming webhook url"
+    note: Teams Incoming webhook url = https://outlook.office.com/webhook/625e7c6e-9df3-4f88-bc78-41ed9ae4443b@080f3eaf-1e2e-4baf-8c3b-e36006ff4ee8/IncomingWebhook/8d55804040c0498fb035d4388eebbac4/1214397b-7abf-44ec-b4eb-a7477eabbae1
+
+
