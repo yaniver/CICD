@@ -28,9 +28,6 @@ pipeline {
               }
             }
             stage('Grafana Alerts') {
-              options {
-                retry(9999999)
-              }
               steps {
                 sh '~/CICD/jenkinsPipelineShellScripts/grafanaAlert.sh'
               }
