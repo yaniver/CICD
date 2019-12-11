@@ -1,6 +1,12 @@
 pipeline {
   agent any
   stages {
+    stage('Clean') {
+      steps {
+        sh '~/CICD/jenkinsPipelineShellScripts/clean.sh'
+      }
+    }
+
     stage('Prometheus') {
       steps {
         sh '~/CICD/jenkinsPipelineShellScripts/dockpromDeploy.sh'
