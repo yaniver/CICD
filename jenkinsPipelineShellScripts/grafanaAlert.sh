@@ -9,6 +9,7 @@ for i in {1..99999999}
 		printf "\n\n"
 		echo "No critical Alert exist for stopping JMeter load scenario"
 		printf "\n"
+		exit 0
 	else
 		echo "Critical Alert exist, fail stage"
 		exit 1
