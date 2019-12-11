@@ -13,12 +13,24 @@ pipeline {
       }
     }
 
-    stage('JMeter run') {
-      steps {
-        sh '~/CICD/jenkinsPipelineShellScripts/jmeterScriptExec.sh'
-      }
+    stage('Parallel Stage') {
+    failFast true
+        parallel {
+            stage('JMeter run') {
+              steps {
+                sh '~/CICD/jenkinsPipelineShellScripts/jmeterScriptExec.sh'
+              }
+            }
+            stage('Grafana Alerts') {
+              options {
+                retry(9999999)
+              }
+              steps {
+                sh '~/CICD/jenkinsPipelineShellScripts/grafanaAlert.sh'
+              }
+            }
+        }
     }
-
   }
   environment {
     ZK_HOST = '10.16.250.7'

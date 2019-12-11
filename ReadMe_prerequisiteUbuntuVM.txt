@@ -65,11 +65,11 @@ Grafana Email support:
       - GF_SMTP_SKIP_VERIFY=true
       - GF_SMTP_FROM_ADDRESS=graphana_user@qa.varonis.com
       - GF_SMTP_FROM_NAME=Grafana
-  - In Grafana UI add alert rule in relevant graph.
+  - In Grafana UI add alert rule in relevant graph (once alerts will be defined in dashboard you can export the json and save it in "dockerpromModification" folder).
   - In Grafana UI add email notification channel (you define a user that already exist in above SMTP server).
 
   Option 2 (Internet exist - "Microsoft Teams")-
   - In Grafana UI add Microsoft Teams notification channel and configure it with "Teams Incoming webhook url"
-    note: Teams Incoming webhook url = https://outlook.office.com/webhook/625e7c6e-9df3-4f88-bc78-41ed9ae4443b@080f3eaf-1e2e-4baf-8c3b-e36006ff4ee8/IncomingWebhook/8d55804040c0498fb035d4388eebbac4/1214397b-7abf-44ec-b4eb-a7477eabbae1
+    note: Teams Incoming webhook url = https://outlook.office.com/webhook/625e7c6e-9df3-4f88-bc78-41ed9ae4443b@080f3eaf-1e2e-4baf-8c3b-e36006ff4ee8/IncomingWebhook/5a10e4f9a23b4d87bced776b5bbdbb91/1214397b-7abf-44ec-b4eb-a7477eabbae1
 
 
