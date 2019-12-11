@@ -12,6 +12,7 @@ for i in {1..99999999}
 	else
 		echo "Critical Alert exist, fail stage"
 		exit 1
+		break
 	fi
 	sleep 1m
 done
