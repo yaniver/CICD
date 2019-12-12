@@ -15,5 +15,6 @@ do
 		condition="false"
 		exit 1
 	fi
-	sleep 1m
+	sleep 30
+	alertExist="$(curl  -H "Authorization: Basic YWRtaW46YWRtaW4=" http://localhost:3000/api/alerts | grep -Eoi "name\":\"Container CPU Usage alert\",\"state\":\"Alerting\"")"
 done
