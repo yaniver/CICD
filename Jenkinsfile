@@ -26,7 +26,7 @@ pipeline {
     }
 
     stage('Parallel Stage') {
-    failFast true
+      failFast true
         parallel {
             stage('JMeter run') {
               steps {
@@ -40,6 +40,7 @@ pipeline {
               }
             }
         }
+      }
     }
   }
   environment {
