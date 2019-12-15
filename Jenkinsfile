@@ -4,11 +4,6 @@ pipeline {
         timeout(time: 15, unit: 'HOURS')
     }
     stages {
-        stage('Clean') {
-            steps {
-                sh '~/CICD/jenkinsPipelineShellScripts/clean.sh'
-            }
-        }
         stage('Prometheus') {
             steps {
                 echo "Deploy Prometheus: ${date}"
