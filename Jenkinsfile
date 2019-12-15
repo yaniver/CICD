@@ -27,18 +27,17 @@ pipeline {
 
     stage('Parallel Stage') {
       failFast true
-        parallel {
-            stage('JMeter run') {
-              steps {
-                echo "Deploy JMeter: ${date}"
-                sh '~/CICD/jenkinsPipelineShellScripts/jmeterScriptExec.sh'
-              }
-            }
-            stage('Grafana Alerts') {
-              steps {
-                sh '~/CICD/jenkinsPipelineShellScripts/grafanaAlert.sh'
-              }
-            }
+      parallel {
+        stage('JMeter run') {
+          steps {
+            echo "Deploy JMeter: ${date}"
+            sh '~/CICD/jenkinsPipelineShellScripts/jmeterScriptExec.sh'
+          }
+        }
+        stage('Grafana Alerts') {
+          steps {
+            sh '~/CICD/jenkinsPipelineShellScripts/grafanaAlert.sh'
+          }
         }
       }
     }
