@@ -11,7 +11,6 @@ pipeline {
         }
         stage('Solr Exporter') {
             steps {
-                echo "Deploy solr exporter: ${date}"
                 sh '~/CICD/jenkinsPipelineShellScripts/solrExporterDeploy.sh'
             }
         }
@@ -20,7 +19,6 @@ pipeline {
             parallel {
                 stage('JMeter run') {
                     steps {
-                        echo "Deploy JMeter: ${date}"
                         sh '~/CICD/jenkinsPipelineShellScripts/jmeterScriptExec.sh'
                     }
                 }

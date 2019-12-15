@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "Deploy Prometheus: ${date}"
 JENKINS_HOME="/var/lib/jenkins"
 cd ${JENKINS_HOME}/CICD
 #online - internet connection

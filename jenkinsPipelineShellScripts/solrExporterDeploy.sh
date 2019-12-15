@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "Deploy Solr exporter: ${date}"
 JENKINS_HOME="/var/lib/jenkins"
 cd ${JENKINS_HOME}/CICD/SolrExporter
 sudo docker build -t solrexporter .
