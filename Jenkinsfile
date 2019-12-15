@@ -6,7 +6,6 @@ pipeline {
     stages {
         stage('Prometheus') {
             steps {
-                echo "Deploy Prometheus: ${date}"
                 sh '~/CICD/jenkinsPipelineShellScripts/dockpromDeploy.sh'
             }
         }
