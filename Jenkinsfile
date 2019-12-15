@@ -12,14 +12,14 @@ pipeline {
 
     stage('Prometheus') {
       steps {
-	echo "Deploy Prometheus: $(date)"
+        echo "Deploy Prometheus: $(date)"
         sh '~/CICD/jenkinsPipelineShellScripts/dockpromDeploy.sh'
       }
     }
 
     stage('Solr Exporter') {
       steps {
-	echo "Deploy solr exporter: $(date)"
+        echo "Deploy solr exporter: $(date)"
         sh '~/CICD/jenkinsPipelineShellScripts/solrExporterDeploy.sh'
       }
     }
@@ -29,7 +29,7 @@ pipeline {
         parallel {
             stage('JMeter run') {
               steps {
-		echo "Deploy JMeter: $(date)"
+                echo "Deploy JMeter: $(date)"
                 sh '~/CICD/jenkinsPipelineShellScripts/jmeterScriptExec.sh'
               }
             }
