@@ -3,7 +3,7 @@ Prerequsite (Installing Docker + Docker-compose + Jenkins):
   Linux VM with Internet connection (such as,  Ubuntu 19 create from Hyper-V or VMware workstation  in Windows)
     Note: enable internet connection link: https://superuser.com/questions/469806/windows-8-hyper-v-how-to-give-vm-internet-access)
   sudo apt install git
-  git clone -depth=1  https://github.com/yaniver/CICD.git
+  git clone --depth=1  https://github.com/yaniver/CICD.git
   cd CICD
   Run script --> "sudo ./prerequisiteCICD.sh"
   (Optional (for Git push later on)- 
